@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import  './Portfolio.css';
 
-import axios from 'axios';
+import axios from 'axios';  
+import {Link} from 'react-router-dom';
 
 class Portfolio extends Component {
     constructor() {
@@ -33,10 +34,15 @@ class Portfolio extends Component {
                     {displayProjects.map((element, i) => {
                         return(
                             <div className='Portfolio-Projects' key={i}>
-                                <h2>{element.name}</h2>
-                                <h2>{element.tag}</h2>
-                                <h2>{element.intro}</h2>
-                                <img style={{width: '100px', height: '100px'}}src={element.mimage} alt='Project' />
+                            <div className='Portfolio-Info'>
+                                <div className='Portfolio-Border'></div>
+                                <br />
+                                <br />
+                                <Link to={`/Project/${element.project_id}`}><h1>{element.name}</h1></Link>
+                                <h3>{element.tag}</h3>
+                                <h4>{element.intro}</h4>
+                            </div>
+                                <img style={{width: '500px', height: '250px', marginTop: '-160px'}}src={element.mimage} alt='Project' />
                             </div>
                         )
                     })}
@@ -47,12 +53,3 @@ class Portfolio extends Component {
 }
 
 export default Portfolio;
-
-// {displayExercises.map((exercises, i) => {
-//     return (
-//         <div className='Step2-Routine-List' key={i}>
-//             <Link to={`/Step3/${this.state.routine.routine_id}/${exercises.exercise_id}`}><h2>{exercises.name}</h2></Link>
-//             <img src={exercises.picture} alt='Motion Pic' />
-//         </div>
-//     )
-// })}

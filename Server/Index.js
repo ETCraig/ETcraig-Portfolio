@@ -16,6 +16,9 @@ massive(CONNECTION_STRING).then(db => {
 const ctrl = require('./Controller');
 
 app.get('/api/getProjects', ctrl.getProjects);
+app.get('/api/getProject/project_id', ctrl.getProject);
+app.get('/api/getImages/project_id', ctrl.getImages);
+app.get('/api/getTechs/project_id', ctrl.getTechs);
 
 const port = 4200;
 

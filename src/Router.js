@@ -5,11 +5,13 @@ import AboutMe from './Components/AboutMe/About';
 import Contact from './Components/Contact/Contact';
 import Education from './Components/Education/Education';
 import Portfolio from './Components/Portfolio/Portfolio';
+import Project from './Components/Project/Project';
 import Skills from './Components/Skills/Skills';
 
 export default(
     <Switch>
         <Route component={Portfolio} exact path='/' />
+        <Route component={Project} path='/Project/id' />
         <Route component={AboutMe} path='/AboutMe' />
         <Route component={Contact} path='/Contact' />
         <Route component={Education} path='/Education' />

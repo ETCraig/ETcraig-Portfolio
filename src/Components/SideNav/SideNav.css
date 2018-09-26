@@ -1,7 +1,9 @@
 .SideNav-App {
     height: 100vh;
-    max-width: 20vw;
-    background-image: url('../../Assets/pexels-photo-270435.jpeg');
+    width: 25vw;
+    background-image: linear-gradient(to bottom right, rgb(153, 8, 8), rgb(88, 0, 0));
+    /* background-image: url('../../Assets/pexels-photo-270435.jpeg'); */
+    position: fixed;
 }
 .SideNav-Body {
     display: flex;
@@ -30,10 +32,14 @@
 }
 .SideNav-Menu h6 {
     text-decoration: none;
+    color: white;
 }
 .SideNav-Menu h6:hover {
     cursor: pointer;
 }
 .SideNav-Footer {
     font-size: 25px;
+}
+.SideNav-Footer h6 {
+    color: white;
 }

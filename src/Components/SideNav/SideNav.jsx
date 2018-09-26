@@ -18,14 +18,14 @@ class SideNav extends Component {
                         <h4>Full Stack Developer</h4>
                     </div>
                     <div className='SideNav-Menu'>
-                        <Link to='/'><h6>Projects</h6></Link>
-                        <Link to='/Skills'><h6>Skills</h6></Link>
-                        <Link to='/Education'><h6>Education</h6></Link>
-                        <Link to='/AboutMe'><h6>About Me</h6></Link>
+                        <Link to='/' style={{textDecoration: 'none'}}><h6>Projects</h6></Link>
+                        <Link to='/Skills' style={{textDecoration: 'none'}}><h6>Skills</h6></Link>
+                        <Link to='/Education' style={{textDecoration: 'none'}}><h6>Education</h6></Link>
+                        <Link to='/AboutMe' style={{textDecoration: 'none'}}><h6>About Me</h6></Link>
                     </div>
                     <div className='SideNav-Footer'>
-                        <Link to='/Contact'><h6>Contact Me</h6></Link>
-                        <img style={{color: 'white'}}src={emailIcon} alt='Email Icon' />
+                        <Link to='/Contact' style={{textDecoration: 'none'}}><h6>Contact Me</h6></Link>
+                        <img src={emailIcon} alt='Email Icon' />
                         <img src={githubIcon} alt='Github Icon' />
                         <img src={linkedinIcon} alt='LinkedIn Icon' />
                     </div>

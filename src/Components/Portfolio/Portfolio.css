@@ -1,13 +1,42 @@
 .Portfolio-App {
     position: absolute;
     max-height: 100vh;
-    max-width: 80vw;
-    margin-left: 20vw;
+    max-width: 75vw;
+    margin-left: 25vw;
 }
 .Portfolio-Body {
-
+    color: #333;
 }
 .Portfolio-Header {
     text-align: left;
     margin-left: 25px;
+}
+.Portfolio-Header h1 {
+    color: #555;
+}
+.Portfolio-Info {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    max-height: 220px;
+}
+.Portfolio-Info h1, 
+.Portfolio-Info h3,
+.Portfolio-Info h4 {
+    text-align: left;
+    margin-left: 25px;
+    max-width: 500px;
+}
+.Portfolio-Info h4 {
+    max-width: 400px;
+}
+.Portfolio-Projects img {
+    margin-left: 600px;
+}
+.Portfolio-Border {
+    align-self: center;
+    width: 70vw;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute;
 }

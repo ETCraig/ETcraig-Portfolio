@@ -1,0 +1,1 @@
+SELECT * FROM portfolio_images WHERE project = $1;
